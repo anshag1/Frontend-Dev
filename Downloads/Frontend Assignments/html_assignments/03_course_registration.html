@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- Task 3: Course Registration Form structure (HTML only) -->
+<html lang="en">
+<head><meta charset="utf-8"><title>Course Registration</title></head>
+<body>
+  <header><h1>Course Registration</h1></header>
+  <main>
+    <form>
+      <fieldset>
+        <legend>Student Details</legend>
+        <label>Name: <input type="text" name="name" placeholder="Your name"></label><br><br>
+        <label>Email: <input type="email" name="email" placeholder="you@example.com"></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Course Selection</legend>
+        <label for="course">Choose a course:</label>
+        <select id="course" name="course">
+          <option value="ml">Machine Learning</option>
+          <option value="web">Web Development</option>
+          <option value="iot">IoT Systems</option>
+        </select>
+      </fieldset>
+    </form>
+
+    <h2>Available Schedules</h2>
+    <table border="1" cellpadding="4">
+      <thead><tr><th>Day</th><th>Time</th><th>Instructor</th></tr></thead>
+      <tbody>
+        <tr><td>Monday</td><td>10:00 - 12:00</td><td>Dr. Sharma</td></tr>
+        <tr><td>Wednesday</td><td>14:00 - 16:00</td><td>Ms. Rao</td></tr>
+      </tbody>
+    </table>
+  </main>
+  <footer><p>© 2025 Course Office</p></footer>
+</body>
+</html>
