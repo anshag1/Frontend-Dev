@@ -1,0 +1,7 @@
+/* Question 9 CSS: multi-column layout using column-count and float */
+body{background:#fafafa;margin:0;font-family:Georgia, serif;padding:2rem;}
+.paper{max-width:1000px;margin:0 auto;background:#fff;padding:1.5rem;border-radius:6px;}
+.spanner{column-span:all;font-size:2rem;margin:0 0 1rem 0;text-align:center;}
+.columns{column-count:3;column-gap:2rem; text-align:justify;}
+.float-left{float:left;margin:0 1rem 1rem 0;width:150px;}
+@media(max-width:800px){.columns{column-count:1} .float-left{float:none;display:block;margin:auto 0 1rem 0}}

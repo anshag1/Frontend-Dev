@@ -1,0 +1,11 @@
+/* Question 10 CSS: demonstrates margin, padding, border, outline, positioning */
+body{margin:0;font-family:Arial, sans-serif;background:#f7fafc;}
+.site-header{position:sticky;top:0;background:#111827;color:#fff;padding:1rem;text-align:center;}
+.hero{background-image:url('https://via.placeholder.com/1200x400');background-size:cover;background-position:center;height:40vh;display:flex;align-items:center;justify-content:center;color:#fff;}
+.about{display:flex;gap:2rem;padding:2rem;align-items:center;}
+.about .col{flex:1;}
+.services{display:flex;gap:1rem;padding:2rem;}
+.service{flex:1;background:#fff;padding:1.5rem;border:1px solid #e5e7eb;box-shadow:0 8px 20px rgba(2,6,23,0.06);}
+.contact{padding:2rem;}
+.contact form{display:flex;gap:1rem;}
+.site-footer{padding:1rem;text-align:center;background:#0b1220;color:#fff;margin-top:2rem;}

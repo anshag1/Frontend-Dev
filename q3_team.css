@@ -1,0 +1,10 @@
+/* Question 3 CSS: 3-column layout with responsive behavior */
+body{margin:0;font-family:Arial, sans-serif;}
+.team{display:flex;gap:1rem;padding:2rem;justify-content:center;flex-wrap:wrap;}
+.card{flex:1 1 250px;max-width:320px;background:#fff;padding:1rem;border:1px solid #e5e7eb;border-radius:8px;box-shadow:0 6px 12px rgba(0,0,0,0.06);}
+.lead{background:#fef3c7;border:2px solid #f59e0b;}
+.card h3{margin:0 0 0.5rem 0;}
+@media (max-width:600px){
+  .team{flex-direction:column;align-items:center;}
+  .card{max-width:90%}
+}

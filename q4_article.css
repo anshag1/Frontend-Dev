@@ -1,0 +1,9 @@
+/* Question 4 CSS: article spacing, ::first-letter and ::first-line styling */
+body{font-family:Georgia, serif;padding:2rem;background:#fbfcfe;}
+.post{max-width:800px;margin:0 auto;background:#fff;padding:2rem;border-radius:8px;}
+.post .meta{color:#6b7280;font-size:0.9rem;margin-bottom:1rem;}
+.content p{margin:1.25rem 0;line-height:1.6;}
+.content p::first-letter{font-size:2.5rem;float:left;margin-right:0.35rem;color:#0ea5a4;}
+.content p::first-line{font-weight:700;}
+mark{background:#fffbcc;padding:0 0.15rem;border-radius:2px;}
+blockquote{border-left:4px solid #c7d2fe;padding:1rem;background:#f8fafc;margin:1rem 0;}

@@ -1,0 +1,9 @@
+/* Question 5 CSS: Pricing plans with hover effects and equal height */
+body{font-family:Arial, sans-serif;margin:0;padding:2rem;background:#f3f4f6;}
+.pricing{display:flex;gap:1rem;justify-content:center;align-items:stretch;}
+.plan{flex:1 1 250px;background:#fff;padding:1.5rem;border-radius:8px;border:1px solid #e5e7eb;display:flex;flex-direction:column;align-items:center;transition:transform 0.25s ease, background 0.25s ease;}
+.plan .price{font-size:2rem;margin:0.5rem 0;}
+.plan a{display:inline-block;margin-top:auto;padding:0.5rem 1rem;border-radius:6px;text-decoration:none;background:#0ea5a4;color:white;}
+.plan:hover{transform:scale(1.03);background:#f8fafc;}
+.popular{border:2px solid #f97316;background:#fff7ed;}
+@media(max-width:700px){.pricing{flex-direction:column;}}
