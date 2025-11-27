@@ -1,0 +1,194 @@
+/* =========================================
+   GLOBAL STYLES
+   ========================================= */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #718ca7;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 { text-align: center; color: #2c3e50; margin-bottom: 30px; }
+h2 { color: #2c3e50; }
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9em;
+  transition: all 0.2s ease;
+}
+
+.btn-primary { background-color: #3498db; color: white; }
+.btn-primary:hover { background-color: #2980b9; }
+
+.btn-success { background-color: #27ae60; color: white; }
+.btn-success:hover { background-color: #219150; }
+
+.btn-warning { background-color: #f39c12; color: white; }
+.btn-warning:hover { background-color: #d35400; }
+
+.btn-danger { background-color: #e74c3c; color: white; }
+.btn-danger:hover { background-color: #c0392b; }
+
+.btn-secondary { background-color: #95a5a6; color: white; }
+.btn-secondary:hover { background-color: #7f8c8d; }
+
+/* =========================================
+   LOADING & ERRORS
+   ========================================= */
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 30px auto;
+}
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+.error-text {
+  color: #e74c3c;
+  font-size: 0.85em;
+  margin-top: 5px;
+  margin-left: 2px;
+}
+
+/* =========================================
+    FORM STYLING (Add/Edit)
+   ========================================= */
+.form-card-wrapper {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #34495e;
+}
+
+.form-group input, 
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dcdfe6;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box; /* Crucial for padding alignment */
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus, 
+.form-group select:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #f0f0f0;
+}
+
+/* =========================================
+    LIST STYLING (Table)
+   ========================================= */
+.list-card-wrapper {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+}
+
+.search-wrapper { margin-bottom: 20px; }
+
+.modern-search {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.95em;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.styled-table thead tr {
+  background-color: #34495e;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th, .styled-table td { padding: 15px 20px; }
+.styled-table tbody tr { border-bottom: 1px solid #dddddd; }
+.styled-table tbody tr:nth-of-type(even) { background-color: #f8f9fa; }
+.styled-table tbody tr:hover { background-color: #f1f1f1; }
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  gap: 8px;
+}
+
+.page-btn {
+  padding: 8px 14px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 4px;
+}
+
+.page-btn.active {
+  background-color: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+/* --- Bottom Right Button Alignment --- */
+.bottom-actions {
+  display: flex;
+  justify-content: flex-end; /* Pushes content to the right */
+  margin-top: 20px;
+  border-top: 1px solid #eee; /* A subtle separator line */
+  padding-top: 15px;
+}
