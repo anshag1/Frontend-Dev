@@ -1,0 +1,42 @@
+    <!doctype html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Q5 - Team Directory</title>
+      <link rel="stylesheet" href="styles.css">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body class="container">
+    <h1>Q5 - Team Directory</h1>
+    <section class="card" id="team">
+  <h2>Team Directory</h2>
+  <div class="department" data-dept="engineering">
+    <h3 class="manager">Manager: Alice</h3>
+    <ul>
+      <li class="employee" data-email="bob@example.com">Bob</li>
+      <li class="employee" data-email="carol@example.com">Carol</li>
+      <li class="employee" data-email="dave@example.com">Dave</li>
+      <li class="employee" data-email="eve@example.com">Eve</li>
+      <li class="employee" data-email="frank@example.com">Frank</li>
+    </ul>
+  </div>
+  <div class="department" data-dept="design">
+    <h3 class="manager">Manager: Grace</h3>
+    <ul>
+      <li class="employee" data-email="heidi@example.com">Heidi</li>
+      <li class="employee" data-email="ivan@example.com">Ivan</li>
+      <li class="employee" data-email="judy@example.com">Judy</li>
+      <li class="employee" data-email="mallory@example.com">Mallory</li>
+      <li class="employee" data-email="oscar@example.com">Oscar</li>
+    </ul>
+  </div>
+  <div>
+    <button id="randomBtn" class="btn">Select Random Employee</button>
+    <button id="collapseBtn" class="btn">Collapse Teams</button>
+  </div>
+  <div id="contact" class="hidden card"></div>
+</section>
+
+    <script src="q5.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,29 @@
+    <!doctype html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Q6 - Event Subscription Panel</title>
+      <link rel="stylesheet" href="styles.css">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body class="container">
+    <h1>Q6 - Event Subscription Panel</h1>
+    <section class="card" id="subs">
+  <h2>Event Subscriptions</h2>
+  <ul id="topics">
+    <li>News <button class="sub btn" data-topic="News">Subscribe</button></li>
+    <li>Offers <button class="sub btn" data-topic="Offers">Subscribe</button></li>
+    <li>Events <button class="sub btn" data-topic="Events">Subscribe</button></li>
+    <li>Updates <button class="sub btn" data-topic="Updates">Subscribe</button></li>
+    <li>Alerts <button class="sub btn" data-topic="Alerts">Subscribe</button></li>
+  </ul>
+  <div>
+    <input id="newTopic" placeholder="New topic">
+    <button id="addTopic" class="btn">Add Topic</button>
+  </div>
+  <div id="messages"></div>
+</section>
+
+    <script src="q6.js"></script>
+    </body>
+    </html>
