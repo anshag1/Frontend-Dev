@@ -1,0 +1,12 @@
+{
+  "students": [
+    {
+      "rollNumber": "2315510029",
+      "name": "Ansh Agarwal",
+      "section": "3CB",
+      "marks": "96",
+      "grade": "O",
+      "id": 1
+    }
+  ]
+}
