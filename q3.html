@@ -1,0 +1,22 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Q3 Multi-step</title>
+<link rel="stylesheet" href="styles.css"></head><body class="container">
+<h2>Q3 - Multi-Step Form</h2>
+<form id="msForm" novalidate>
+  <div class="step" data-step="1">
+    <label>Name: <input name="name" required></label>
+    <div><button type="button" class="next btn">Next</button></div>
+  </div>
+  <div class="step hidden" data-step="2">
+    <label>Email: <input name="email" required></label>
+    <div><button type="button" class="back btn">Back</button>
+    <button type="button" class="next btn">Next</button></div>
+  </div>
+  <div class="step hidden" data-step="3">
+    <label>Password: <input name="password" type="password" required></label>
+    <div><button type="button" class="back btn">Back</button>
+    <button type="submit" class="btn">Submit</button></div>
+  </div>
+</form>
+<div id="summary" class="hidden"></div>
+<script src="q3.js"></script>
+</body></html>
