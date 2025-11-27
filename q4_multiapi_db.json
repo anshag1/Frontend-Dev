@@ -1,0 +1,78 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "User A"
+    },
+    {
+      "id": 2,
+      "name": "User B"
+    },
+    {
+      "id": 3,
+      "name": "User C"
+    },
+    {
+      "id": 4,
+      "name": "User D"
+    },
+    {
+      "id": 5,
+      "name": "User E"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 1,
+      "total": 1299
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "total": 499
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "total": 2499
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "total": 799
+    },
+    {
+      "id": 5,
+      "userId": 4,
+      "total": 1599
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Backpack",
+      "price": 899
+    },
+    {
+      "id": 2,
+      "name": "Camera",
+      "price": 25999
+    },
+    {
+      "id": 3,
+      "name": "Bluetooth Speaker",
+      "price": 1999
+    },
+    {
+      "id": 4,
+      "name": "Smartwatch",
+      "price": 6999
+    },
+    {
+      "id": 5,
+      "name": "Mouse",
+      "price": 799
+    }
+  ]
+}
