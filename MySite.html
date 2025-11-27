@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MySite - Full Page Layout</title>
+  <style>
+    :root{
+      --dark:#2b2f36;
+      --nav:#23272b;
+      --accent:#2fa3ff;
+      --card-grad-start:#1ea1ff;
+      --card-grad-end:#0b6abf;
+      --muted:#8f98a3;
+      --sidebar:#1f3a4b;
+      --white:#ffffff;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:#eef2f6;color:#222}
+
+    /* Layout */
+    body{display:flex;flex-direction:column;min-height:100vh;}
+    main{flex:1;display:flex;}
+
+    /* Topbar */
+    .topbar{background:var(--nav);color:var(--white);padding:14px 40px;display:flex;align-items:center;justify-content:space-between;}
+    .brand{font-weight:700;color:var(--accent);font-size:20px}
+    .navlinks{display:flex;gap:25px}
+    .navlinks a{color:#d6dbe0;text-decoration:none;font-size:14px;transition:color 0.3s}
+    .navlinks a:hover{color:var(--accent)}
+
+    /* Sidebar */
+    .sidebar{width:260px;background:linear-gradient(180deg,#2b4b5f,#193542);padding:24px;display:flex;flex-direction:column;gap:15px;color:#dbe9f2;box-shadow:2px 0 8px rgba(0,0,0,0.1)}
+    .sidebar h3{margin-bottom:12px;font-size:17px}
+    .menu{list-style:none;display:flex;flex-direction:column;gap:12px}
+    .menu li{display:flex;align-items:center;gap:12px;padding:10px;border-radius:8px;cursor:pointer;transition:background 0.3s}
+    .menu li:hover{background:rgba(255,255,255,0.08)}
+    .ico{width:34px;height:34px;border-radius:6px;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;font-weight:700}
+    .menu span{font-size:14px;color:#dbe9f2}
+
+    /* Main content */
+    .content{flex:1;padding:50px;display:flex;flex-direction:column;justify-content:center;}
+    .welcome h1{font-size:30px;margin-bottom:10px}
+    .welcome p{color:var(--muted);max-width:600px;margin-bottom:30px}
+
+    /* Cards */
+    .card-container{display:flex;gap:30px;flex-wrap:wrap}
+    .card-wrap{background:var(--white);border-radius:12px;padding:20px;width:260px;box-shadow:0 8px 20px rgba(36,43,50,0.08);transition:transform 0.3s}
+    .card-wrap:hover{transform:translateY(-5px)}
+    .card-top{height:100px;border-radius:10px;background:linear-gradient(180deg,var(--card-grad-start),var(--card-grad-end));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:18px;box-shadow:inset 0 -6px 18px rgba(0,0,0,0.12)}
+    .card-body{padding-top:15px}
+    .card-body h4{margin:0 0 6px;font-size:15px}
+    .card-body p{margin:0;color:var(--muted);font-size:13px}
+    .btn{display:inline-block;margin-top:12px;padding:8px 16px;border-radius:8px;text-decoration:none;font-weight:600;font-size:13px;transition:0.3s}
+    .btn-blue{background:var(--accent);color:white}
+    .btn-blue:hover{opacity:0.8}
+    .btn-outline{background:transparent;border:2px solid #cfe9ff;color:#185c99}
+    .btn-outline:hover{background:#e8f5ff}
+
+    /* Footer */
+    .footer{background:var(--nav);color:#cbd3d9;padding:20px 40px;display:flex;align-items:center;justify-content:space-between;border-top:3px solid rgba(0,0,0,0.12)}
+    .footer .logo{background:var(--accent);padding:6px 10px;border-radius:6px;color:white;font-weight:700}
+    .socials{display:flex;gap:10px}
+    .dot{width:30px;height:30px;border-radius:50%;background:#43505a;display:flex;align-items:center;justify-content:center;color:#dbe9f2;font-size:12px;cursor:pointer}
+    .dot:hover{background:#5b6b77}
+
+    @media (max-width:900px){
+      main{flex-direction:column;}
+      .sidebar{width:100%;flex-direction:row;justify-content:space-around;}
+      .content{padding:30px;}
+      .card-container{justify-content:center;}
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">MySite</div>
+    <nav class="navlinks">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <aside class="sidebar">
+      <h3>Categories</h3>
+      <ul class="menu">
+        <li><div class="ico">🏠</div><span>Dashboard</span></li>
+        <li><div class="ico">📊</div><span>Analytics</span></li>
+        <li><div class="ico">📦</div><span>Products</span></li>
+        <li><div class="ico">👥</div><span>Users</span></li>
+        <li><div class="ico">⚙️</div><span>Settings</span></li>
+      </ul>
+    </aside>
+
+    <section class="content">
+      <div class="welcome">
+        <h1>Welcome to Our Website!</h1>
+        <p>Use a short line of welcome text to introduce visitors to your product or service. Keep it crisp and inviting to read.</p>
+      </div>
+
+      <div class="card-container">
+        <div class="card-wrap">
+          <div class="card-top">Card 1</div>
+          <div class="card-body">
+            <h4>Card Item One</h4>
+            <p>Dual-tone card to showcase your features and information.</p>
+            <a class="btn btn-blue" href="#">Learn More</a>
+          </div>
+        </div>
+
+        <div class="card-wrap">
+          <div class="card-top">Card 2</div>
+          <div class="card-body">
+            <h4>Card Item Two</h4>
+            <p>Another short description for the second item.</p>
+            <a class="btn btn-outline" href="#">Discover</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>© 2023 MyCompany. All rights reserved.</div>
+    <div style="display:flex;align-items:center;gap:12px">
+      <div class="logo">Logo</div>
+      <div class="socials">
+        <div class="dot">f</div>
+        <div class="dot">t</div>
+        <div class="dot">in</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
