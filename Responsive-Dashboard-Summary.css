@@ -1,0 +1,17 @@
+/* Responsive Dashboard Summary */
+body{font-family:Arial,Helvetica,sans-serif;margin:0}
+.dash-header{background:#0a3;padding:1rem;color:#fff;text-align:center}
+.layout{display:grid;grid-template-columns:220px 1fr;gap:1rem;padding:1rem}
+.sidebar{background:#fff;padding:1rem;border-radius:8px;box-shadow:0 6px 12px rgba(0,0,0,.04)}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+.card{background:#fff;padding:1rem;border-radius:8px;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:scale(1.03);box-shadow:0 12px 24px rgba(0,0,0,.12)}
+@keyframes loadIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.cards{animation:loadIn .6s both}
+
+/* Responsive: sidebar to top below 750px */
+@media (max-width:750px){
+  .layout{grid-template-columns:1fr;grid-template-rows:auto 1fr}
+  .sidebar{order:-1}
+  .cards{grid-template-columns:1fr}
+}
